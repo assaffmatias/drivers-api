@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.buttonNext,
+.buttonPrev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    margin: 2em;
+    border: none;
+    background: #fff;
+    border-radius: 0 0 10px 0;
+}
+
+.svg{
+    color: red;
+}
+
+.buttonPrev[disabled], .buttonNext[disabled] {
+    filter: brightness(0.5);
+    cursor: not-allowed;
+}
+
+.p{
+    font-family: "Formula1 Display Bold Bold";
+    color: white;
+}

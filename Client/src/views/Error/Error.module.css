@@ -1,0 +1,41 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p{
+    font-family: 'Signika', sans-serif;
+    color: #e00404d7;
+    font-size: 2em;
+}
+
+.h1{
+    margin: 0;
+    margin-bottom: .5em;
+    font-family: "Formula1 Display Bold Bold";
+    font-size: 6em;
+    text-align: center;
+    color: #fff;
+}
+
+.button{
+    font-family: "Formula1 Display Bold Bold";
+    background-image: url('../../assets/background3.jpg');
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #15151e;
+    width: 20em;
+    height: 2.2em;
+    font-size: 1.1em;
+    background-color: white;
+}

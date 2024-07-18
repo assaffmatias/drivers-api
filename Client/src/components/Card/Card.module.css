@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    float: left;
+    margin-bottom: 0.3em;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainContent {
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    font-weight: bold;
+}
+
+.driverImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: top;
+    background: rgb(38, 54, 87);
+    background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.driverName {
+    font-size: .9em;
+    color: #fff;
+    margin: 0;
+    margin-left: 1em;
+}
+
+.driverName:hover {
+    cursor: pointer;
+    color: #e00504;
+}
+
+.nationalityContent {
+    font-family: 'Titillium Web', sans-serif;
+    margin-right: 1em;
+    text-align: start;
+}
+
+.nationalityTitle {
+    font-size: .9em;
+    margin-left: 1em;
+    color: #00ff99;
+}
+
+.deleteButton{
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color: #e00504;
+    color: #fff;
+    margin-left: 2em;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        margin-bottom: 1em;
+    }
+
+    .driverImage {
+        width: 70px;
+        height: 70px;
+    }
+
+    .driverName {
+        font-size: 1.1em;
+    }
+
+    .nationalityTitle {
+       font-size: 1.1em;
+    }
+}

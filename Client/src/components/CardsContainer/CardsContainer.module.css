@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.masthead {
+  position: relative;
+  background-image: url('../../assets/default-media.svg');
+  background-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    white 5%,
+    transparent 95%
+  );
+  height: 80px;
+}
+
+.mastheadTitle {
+  position: absolute;
+  color: #ebeaea;
+  margin-left: 0.6em;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.welcomeTitle{
+  font-family: "Titillium Web";
+  margin-left: 1.3em;
+  margin-right: .7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.filterContent{
+  margin-top: 1em;
+}
+
+.orderSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 2em;
+}
+
+.driverText,
+.nationalityText {
+  color: #fff;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: .8em;
+}
+
+.orderForDesktop{
+  display: none;
+}
+
+.orderForMobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 2em;
+}
+
+.driverSection {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.p{
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+@media screen and (min-width: 820px) {
+
+  .masthead{
+    height: 120px;
+  }
+
+  .mastheadTitle{
+    margin-top: 60px;
+    font-size: 3.5em;
+  }
+
+  .welcomeTitle{
+    margin-left: 1.4em;
+    font-size: 1.6em;
+  }
+
+  .filterContent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  .driverSection,
+  .orderSection {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .driverText,
+  .nationalityText{
+    font-size: 1em;
+  }
+
+  .orderForDesktop{
+    display: block;
+  }
+
+  .orderForMobile{
+    display: none;
+  }
+
+}

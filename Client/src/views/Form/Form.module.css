@@ -1,0 +1,167 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.masthead {
+  position: relative;
+  background-image: url('../../assets/default-media.svg');
+  background-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    white 5%,
+    transparent 95%
+  );
+  height: 80px;
+}
+
+.mastheadTitle {
+  position: absolute;
+  font-family: "Formula1 Display Bold Bold";
+  color: #ebeaea;
+  margin-left: 0.6em;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.welcomeTitle{
+  font-family: "Titillium Web";
+  margin-left: 1.3em;
+  margin-right: .7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0;
+  margin-bottom: 2em;
+}
+
+.sectionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.labelText{
+  display: flex;
+  width: 100%;
+  margin-bottom: .3em;
+  font-family: "Orgon W03 Bold";
+  color: #fff;
+}
+
+.label {
+  display: flex;
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.input {
+  font-family: "Formula1 Display Bold Bold";
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #0d1117;
+  padding: 5px .5em;
+  border-radius: 8px;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.input::placeholder{
+  color: #0d11176e;
+}
+
+.selectNationality {
+  font-family: "Formula1 Display Bold Bold";
+  height: 3.5em;
+  border: 1px solid #0d1117;
+  width: 100%;
+  padding: 5px .5em;
+  border-radius: 8px;
+}
+
+.select {
+  font-family: "Formula1 Display Bold Bold";
+  width: 100%;
+  border: 1px solid #0d1117;
+  height: 5em;
+  border-radius: 8px;
+  padding: 5px .5em;
+}
+
+.select:focus{
+  outline: none;
+}
+
+.select::-webkit-scrollbar {
+  width: 4px;              
+}
+
+.select::-webkit-scrollbar-track {
+  background: transparent;       
+}
+
+.select::-webkit-scrollbar-thumb {
+  background-color: #0d1117;          
+  border: 3px solid #0d1117;
+}
+
+.button {
+  font-family: "Formula1 Display Bold Bold";
+  width: 10em;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+  background-color: #e00504;
+  color: #fff;
+  transition: 0.3s;
+  margin-top: 2em;
+  border-radius: 0 0 10px 0;
+}
+
+.button:hover{
+  color: #0d1117;
+}
+
+/* .error {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid green;
+} */
+
+@media screen and (min-width: 768px) {
+  .masthead{
+    height: 120px;
+  }
+
+  .mastheadTitle {
+    margin-top: 60px;
+    font-size: 3.5em;
+  }
+
+  .welcomeTitle{
+    margin-left: 1.4em;
+    font-size: 1.6em;
+  }
+
+  .select{
+    height: 10em;
+  }
+
+  .button {
+    margin-bottom: 1em;
+  }
+}

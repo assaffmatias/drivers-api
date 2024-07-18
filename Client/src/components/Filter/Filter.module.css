@@ -1,0 +1,79 @@
+.selectContent {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+}
+
+.value {
+  font-family: "Formula1 Display Bold Bold";
+  background: #ffffff0d;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  margin-top: 1em;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 2px solid #e10600;
+  border-radius: 3px 3px 0 0;
+  flex-grow: 1;
+}
+
+.value:hover {
+  background: #ffffff3b;
+}
+
+.value.selected {
+  color: #fff;
+  background: #E1060026;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+}
+
+.select {
+  font-family: "Formula1 Display Bold Bold";
+  font-weight: 600;
+  background: #15151e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 2.4em;
+  border: 1px solid #ffffff42;
+  border-radius: 3px;
+  width: 10em;
+  margin-left: 1em;
+  padding: 0 5px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select::-webkit-scrollbar {
+  width: 12px;
+}
+
+.select::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.select::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+  .value,
+  .select {
+    font-size: 1em;
+  }
+}

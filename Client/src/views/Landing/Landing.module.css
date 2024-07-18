@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  position: relative;
+  height: 100vh;
+}
+
+.imageSection {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+}
+
+.titleLogo {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.titleDrivers {
+  color: #fff;
+  margin-right: .1em;
+}
+
+.titleApi {
+  color: #e00504;
+  margin-left: .1em;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeButton,
+.aboutButton,
+.createButton {
+  font-family: "Formula1 Display Bold Bold";
+  background-color: #e00504;
+  border: none;
+  cursor: pointer;
+  width: 18em;
+  height: 3.5em;
+  margin: 0.4em;
+  color: #fff;
+  transition: .3s;
+  border-radius: 0 0 10px 0;
+}
+
+.welcomeButton {
+  background-color: #fff;
+  color: #e00504;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 100px;
+    width: 450px;
+  }
+
+  .titleLogo {
+    font-size: 5em;
+    margin-bottom: .5em;
+  }
+
+  .buttonContainer {
+    flex-direction: row;
+  }
+
+  .welcomeButton:hover,
+  .aboutButton:hover {
+    color: #0d1117;
+  }
+}
